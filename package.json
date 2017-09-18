@@ -42,5 +42,8 @@
         "single"
       ]
     }
+  },
+  "dependencies": {
+    "mdbootstrap": "^4.4.1"
   }
 }
