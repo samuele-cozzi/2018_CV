@@ -25,7 +25,7 @@ window.AboutMe = React.createClass({
   render: function() {
         return (
             <div>
-                <h2 class="h2-responsive">About me</h2>
+                <h2 className="h2-responsive">About me</h2>
                 <p>vamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus,
                         nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur
                         ac, vestibulum at eros.</p>
