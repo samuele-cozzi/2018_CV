@@ -1,48 +1,51 @@
 "use strict";
 
-// import React from 'react';
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-// class AboutMe extends React.Component {
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-//     componentDidMount() {
-//         console.log("AboutMe: componentDidMount");
-//     }
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-//     render() {
-//         return (
-//             <div>
-//                 <h2 class="h2-responsive">About me</h2>
-//                 <p>vamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus,
-//                         nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur
-//                         ac, vestibulum at eros.</p>
-//             </div>
-//         );
-//     }
-// }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-window.AboutMe = React.createClass({
-  displayName: "AboutMe",
+//import React from 'react';
 
-  getInitialState: function getInitialState() {
-    return {};
-  },
-  render: function render() {
-    return React.createElement(
-      "div",
-      null,
-      React.createElement(
-        "h2",
-        { className: "h2-responsive" },
-        "About me"
-      ),
-      React.createElement(
-        "p",
-        null,
-        "vamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros."
-      )
-    );
-  }
-});
+var AboutMe = function (_React$Component) {
+    _inherits(AboutMe, _React$Component);
+
+    function AboutMe() {
+        _classCallCheck(this, AboutMe);
+
+        return _possibleConstructorReturn(this, (AboutMe.__proto__ || Object.getPrototypeOf(AboutMe)).apply(this, arguments));
+    }
+
+    _createClass(AboutMe, [{
+        key: "componentDidMount",
+        value: function componentDidMount() {
+            console.log("AboutMe: componentDidMount");
+        }
+    }, {
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                "div",
+                null,
+                React.createElement(
+                    "h2",
+                    { className: "h2-responsive" },
+                    "About me"
+                ),
+                React.createElement(
+                    "p",
+                    null,
+                    "vamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros."
+                )
+            );
+        }
+    }]);
+
+    return AboutMe;
+}(React.Component);
 
 ReactDOM.render(React.createElement(window.AboutMe, null), document.getElementById('about-me'));
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkFib3V0TWUuanN4Il0sIm5hbWVzIjpbIndpbmRvdyIsIkFib3V0TWUiLCJSZWFjdCIsImNyZWF0ZUNsYXNzIiwiZ2V0SW5pdGlhbFN0YXRlIiwicmVuZGVyIiwiUmVhY3RET00iLCJkb2N1bWVudCIsImdldEVsZW1lbnRCeUlkIl0sIm1hcHBpbmdzIjoiOztBQUFBOztBQUVBOztBQUVBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUVBQSxPQUFPQyxPQUFQLEdBQWlCQyxNQUFNQyxXQUFOLENBQWtCO0FBQUE7O0FBQ2pDQyxtQkFBaUIsMkJBQVc7QUFDMUIsV0FBTyxFQUFQO0FBQ0QsR0FIZ0M7QUFJakNDLFVBQVEsa0JBQVc7QUFDYixXQUNJO0FBQUE7QUFBQTtBQUNJO0FBQUE7QUFBQSxVQUFJLFdBQVUsZUFBZDtBQUFBO0FBQUEsT0FESjtBQUVJO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFGSixLQURKO0FBUUg7QUFiOEIsQ0FBbEIsQ0FBakI7O0FBZ0JBQyxTQUFTRCxNQUFULENBQ0Usb0JBQUMsTUFBRCxDQUFRLE9BQVIsT0FERixFQUVFRSxTQUFTQyxjQUFULENBQXdCLFVBQXhCLENBRkYiLCJmaWxlIjoiQWJvdXRNZS5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIGltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XHJcblxyXG4vLyBjbGFzcyBBYm91dE1lIGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcclxuXHJcbi8vICAgICBjb21wb25lbnREaWRNb3VudCgpIHtcclxuLy8gICAgICAgICBjb25zb2xlLmxvZyhcIkFib3V0TWU6IGNvbXBvbmVudERpZE1vdW50XCIpO1xyXG4vLyAgICAgfVxyXG5cclxuLy8gICAgIHJlbmRlcigpIHtcclxuLy8gICAgICAgICByZXR1cm4gKFxyXG4vLyAgICAgICAgICAgICA8ZGl2PlxyXG4vLyAgICAgICAgICAgICAgICAgPGgyIGNsYXNzPVwiaDItcmVzcG9uc2l2ZVwiPkFib3V0IG1lPC9oMj5cclxuLy8gICAgICAgICAgICAgICAgIDxwPnZhbXVzIHNhZ2l0dGlzIGxhY3VzIHZlbCBhdWd1ZSBsYW9yZWV0IHJ1dHJ1bSBmYXVjaWJ1cyBkb2xvciBhdWN0b3IuIER1aXMgbW9sbGlzLCBlc3Qgbm9uIGNvbW1vZG8gbHVjdHVzLFxyXG4vLyAgICAgICAgICAgICAgICAgICAgICAgICBuaXNpIGVyYXQgcG9ydHRpdG9yIGxpZ3VsYSwgZWdldCBsYWNpbmlhIG9kaW8gc2VtIG5lYyBlbGl0LiBNb3JiaSBsZW8gcmlzdXMsIHBvcnRhIGFjIGNvbnNlY3RldHVyXHJcbi8vICAgICAgICAgICAgICAgICAgICAgICAgIGFjLCB2ZXN0aWJ1bHVtIGF0IGVyb3MuPC9wPlxyXG4vLyAgICAgICAgICAgICA8L2Rpdj5cclxuLy8gICAgICAgICApO1xyXG4vLyAgICAgfVxyXG4vLyB9XHJcblxyXG53aW5kb3cuQWJvdXRNZSA9IFJlYWN0LmNyZWF0ZUNsYXNzKHtcclxuICBnZXRJbml0aWFsU3RhdGU6IGZ1bmN0aW9uKCkge1xyXG4gICAgcmV0dXJuIHt9O1xyXG4gIH0sXHJcbiAgcmVuZGVyOiBmdW5jdGlvbigpIHtcclxuICAgICAgICByZXR1cm4gKFxyXG4gICAgICAgICAgICA8ZGl2PlxyXG4gICAgICAgICAgICAgICAgPGgyIGNsYXNzTmFtZT1cImgyLXJlc3BvbnNpdmVcIj5BYm91dCBtZTwvaDI+XHJcbiAgICAgICAgICAgICAgICA8cD52YW11cyBzYWdpdHRpcyBsYWN1cyB2ZWwgYXVndWUgbGFvcmVldCBydXRydW0gZmF1Y2lidXMgZG9sb3IgYXVjdG9yLiBEdWlzIG1vbGxpcywgZXN0IG5vbiBjb21tb2RvIGx1Y3R1cyxcclxuICAgICAgICAgICAgICAgICAgICAgICAgbmlzaSBlcmF0IHBvcnR0aXRvciBsaWd1bGEsIGVnZXQgbGFjaW5pYSBvZGlvIHNlbSBuZWMgZWxpdC4gTW9yYmkgbGVvIHJpc3VzLCBwb3J0YSBhYyBjb25zZWN0ZXR1clxyXG4gICAgICAgICAgICAgICAgICAgICAgICBhYywgdmVzdGlidWx1bSBhdCBlcm9zLjwvcD5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgKTtcclxuICAgIH1cclxufSk7XHJcblxyXG5SZWFjdERPTS5yZW5kZXIoXHJcbiAgPHdpbmRvdy5BYm91dE1lIC8+LFxyXG4gIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdhYm91dC1tZScpIFxyXG4pOyJdfQ==
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkFib3V0TWUuanN4Il0sIm5hbWVzIjpbIkFib3V0TWUiLCJjb25zb2xlIiwibG9nIiwiUmVhY3QiLCJDb21wb25lbnQiLCJSZWFjdERPTSIsInJlbmRlciIsImRvY3VtZW50IiwiZ2V0RWxlbWVudEJ5SWQiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7QUFBQTs7SUFFTUEsTzs7Ozs7Ozs7Ozs7NENBRWtCO0FBQ2hCQyxvQkFBUUMsR0FBUixDQUFZLDRCQUFaO0FBQ0g7OztpQ0FFUTtBQUNMLG1CQUNJO0FBQUE7QUFBQTtBQUNJO0FBQUE7QUFBQSxzQkFBSSxXQUFVLGVBQWQ7QUFBQTtBQUFBLGlCQURKO0FBRUk7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUZKLGFBREo7QUFRSDs7OztFQWZpQkMsTUFBTUMsUzs7QUFrQjVCQyxTQUFTQyxNQUFULENBQ0Usb0JBQUMsTUFBRCxDQUFRLE9BQVIsT0FERixFQUVFQyxTQUFTQyxjQUFULENBQXdCLFVBQXhCLENBRkYiLCJmaWxlIjoiQWJvdXRNZS5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcclxuXHJcbmNsYXNzIEFib3V0TWUgZXh0ZW5kcyBSZWFjdC5Db21wb25lbnQge1xyXG5cclxuICAgIGNvbXBvbmVudERpZE1vdW50KCkge1xyXG4gICAgICAgIGNvbnNvbGUubG9nKFwiQWJvdXRNZTogY29tcG9uZW50RGlkTW91bnRcIik7XHJcbiAgICB9XHJcblxyXG4gICAgcmVuZGVyKCkge1xyXG4gICAgICAgIHJldHVybiAoXHJcbiAgICAgICAgICAgIDxkaXY+XHJcbiAgICAgICAgICAgICAgICA8aDIgY2xhc3NOYW1lPVwiaDItcmVzcG9uc2l2ZVwiPkFib3V0IG1lPC9oMj5cclxuICAgICAgICAgICAgICAgIDxwPnZhbXVzIHNhZ2l0dGlzIGxhY3VzIHZlbCBhdWd1ZSBsYW9yZWV0IHJ1dHJ1bSBmYXVjaWJ1cyBkb2xvciBhdWN0b3IuIER1aXMgbW9sbGlzLCBlc3Qgbm9uIGNvbW1vZG8gbHVjdHVzLFxyXG4gICAgICAgICAgICAgICAgICAgICAgICBuaXNpIGVyYXQgcG9ydHRpdG9yIGxpZ3VsYSwgZWdldCBsYWNpbmlhIG9kaW8gc2VtIG5lYyBlbGl0LiBNb3JiaSBsZW8gcmlzdXMsIHBvcnRhIGFjIGNvbnNlY3RldHVyXHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGFjLCB2ZXN0aWJ1bHVtIGF0IGVyb3MuPC9wPlxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICApO1xyXG4gICAgfVxyXG59XHJcblxyXG5SZWFjdERPTS5yZW5kZXIoXHJcbiAgPHdpbmRvdy5BYm91dE1lIC8+LFxyXG4gIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdhYm91dC1tZScpIFxyXG4pOyJdfQ==

@@ -119,7 +119,7 @@ gulp.task('serve', () => {
       'app/*.html',
       'app/images/**/*',
       '.tmp/scripts/**/*.js',
-      '.tmp/styles/**/*.css',
+      '.tmp/styles/**/*.less',
       '.tmp/fonts/**/*'
     ]).on('change', reload);
 

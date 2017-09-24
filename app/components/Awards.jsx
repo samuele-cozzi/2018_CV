@@ -8,7 +8,7 @@ window.Awards = React.createClass({
                 <h3>Awards</h3>
                 <div className="media mb-1">
                     <a className="media-left waves-light">
-                        <img className="rounded-circle" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-13.jpg" alt="Generic placeholder image" />
+                        <img className="rounded-circle img-fluid" src="styles/img/microsoft.png" alt="Generic placeholder image" />
                     </a>
                     <div className="media-body">
                         <h4 className="media-heading">Microsoft</h4>
@@ -18,7 +18,7 @@ window.Awards = React.createClass({
                 </div>
                 <div className="media mb-1">
                     <a className="media-left waves-light">
-                        <img className="rounded-circle" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-13.jpg" alt="Generic placeholder image" />
+                        <img className="rounded-circle img-fluid" src="styles/img/sitecore.jpg" alt="Generic placeholder image" />
                     </a>
                     <div className="media-body">
                         <h4 className="media-heading">Sitecore</h4>
@@ -29,7 +29,7 @@ window.Awards = React.createClass({
 
                 <div className="media mb-1">
                     <a className="media-left waves-light">
-                        <img className="rounded-circle" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-13.jpg" alt="Generic placeholder image" />
+                        <img className="rounded-circle img-fluid" src="styles/img/coursera.png" alt="Generic placeholder image" />
                     </a>
                     <div className="media-body">
                         <h4 className="media-heading">Microsoft</h4>

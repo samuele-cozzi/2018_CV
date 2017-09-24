@@ -2,6 +2,77 @@ window.Languages = React.createClass({
     getInitialState: function () {
         return {};
     },
+    componentDidMount: function() {
+
+        new Chart(document.getElementById("italian-read"), {
+            type: 'doughnut',
+            data: {
+              labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+              datasets: [
+                {
+                  data: [80,20]
+                }
+              ]
+            },
+            options: {
+                
+        legend: { display: false },
+        rotation: Math.PI ,
+        circumference: Math.PI,
+              title: {
+                display: false,
+                text: 'Read'
+              }
+            }
+        });
+        var i = new Chartist.Pie('#italian-write', {
+            series: [100]
+            }, {
+            donut: true,
+            donutWidth: 20,
+            startAngle: 270,
+            total: 200,
+            showLabel: false
+            });
+        var i = new Chartist.Pie('#italian-speak', {
+            series: [100]
+            }, {
+            donut: true,
+            donutWidth: 20,
+            startAngle: 270,
+            total: 200,
+            showLabel: false
+            });
+
+        var i = new Chartist.Pie('#english-read', {
+            series: [80,20]
+            }, {
+            donut: true,
+            donutWidth: 20,
+            startAngle: 270,
+            total: 200,
+            showLabel: false
+            });
+        var i = new Chartist.Pie('#english-write', {
+            series: [80,20]
+            }, {
+            donut: true,
+            donutWidth: 20,
+            startAngle: 270,
+            total: 200,
+            showLabel: false
+            });
+        var i = new Chartist.Pie('#english-speak', {
+            series: [80,20]
+            }, {
+            donut: true,
+            donutWidth: 20,
+            startAngle: 270,
+            total: 200,
+            showLabel: false
+            });
+         //console.log("AboutMe: componentDidMount");
+    },
     render: function () {
         return (
             <div className="mx-auto mb-1">
@@ -11,24 +82,12 @@ window.Languages = React.createClass({
                     <div className="col-md-12 text-center">
                         <h5>Italian</h5>
                     </div>
-
-                    <svg width="33%" height="33%" viewBox="0 0 42 42" className="donut">
-                        <circle className="donut-hole" style={{ fill: "#fff" }} cx="21" cy="21" r="15.91549430918954"></circle>
-                        <circle className="donut-ring" style={{ fill: 'transparent', stroke: "#d2d3d4", strokeWidth: 3 }} cx="21" cy="21" r="15.91549430918954"></circle>
-                        <circle className="donut-segment" style={{ fill: 'transparent', stroke: "#ce4b99", strokeWidth: 3, strokeDasharray: "85 15", strokeDashoffset: "0" }} cx="21" cy="21" r="15.91549430918954"></circle>
-                    </svg>
-
-                    <svg width="33%" height="33%" viewBox="0 0 42 42" className="donut">
-                        <circle className="donut-hole" style={{ fill: "#fff" }} cx="21" cy="21" r="15.91549430918954"></circle>
-                        <circle className="donut-ring" style={{ fill: 'transparent', stroke: "#d2d3d4", strokeWidth: 3 }} cx="21" cy="21" r="15.91549430918954"></circle>
-                        <circle className="donut-segment" style={{ fill: 'transparent', stroke: "#ce4b99", strokeWidth: 3, strokeDasharray: "85 15", strokeDashoffset: "0" }} cx="21" cy="21" r="15.91549430918954"></circle>
-                    </svg>
-
-                    <svg width="33%" height="33%" viewBox="0 0 42 42" className="donut">
-                        <circle className="donut-hole" style={{ fill: "#fff" }} cx="21" cy="21" r="15.91549430918954"></circle>
-                        <circle className="donut-ring" style={{ fill: 'transparent', stroke: "#d2d3d4", strokeWidth: 3 }} cx="21" cy="21" r="15.91549430918954"></circle>
-                        <circle className="donut-segment" style={{ fill: 'transparent', stroke: "#ce4b99", strokeWidth: 3, strokeDasharray: "85 15", strokeDashoffset: "0" }} cx="21" cy="21" r="15.91549430918954"></circle>
-                    </svg>
+                    <div className="col-xs-4 col-sm-4 text-center">
+                        <canvas id="italian-read" ></canvas>
+                        <h6>Read</h6>
+                    </div>
+                    <div id="italian-write" className="col-xs-4 col-sm-4"></div>
+                    <div id="italian-speak" className="col-xs-4 col-sm-4"></div>
 
                 </div>
 
@@ -37,23 +96,9 @@ window.Languages = React.createClass({
                         <h5>English</h5>
                     </div>
 
-                    <svg width="33%" height="33%" viewBox="0 0 42 42" className="donut">
-                        <circle className="donut-hole" style={{ fill: "#fff" }} cx="21" cy="21" r="15.91549430918954"></circle>
-                        <circle className="donut-ring" style={{ fill: 'transparent', stroke: "#d2d3d4", strokeWidth: 3 }} cx="21" cy="21" r="15.91549430918954"></circle>
-                        <circle className="donut-segment" style={{ fill: 'transparent', stroke: "#ce4b99", strokeWidth: 3, strokeDasharray: "85 15", strokeDashoffset: "0" }} cx="21" cy="21" r="15.91549430918954"></circle>
-                    </svg>
-
-                    <svg width="33%" height="33%" viewBox="0 0 42 42" className="donut">
-                        <circle className="donut-hole" style={{ fill: "#fff" }} cx="21" cy="21" r="15.91549430918954"></circle>
-                        <circle className="donut-ring" style={{ fill: 'transparent', stroke: "#d2d3d4", strokeWidth: 3 }} cx="21" cy="21" r="15.91549430918954"></circle>
-                        <circle className="donut-segment" style={{ fill: 'transparent', stroke: "#ce4b99", strokeWidth: 3, strokeDasharray: "85 15", strokeDashoffset: "0" }} cx="21" cy="21" r="15.91549430918954"></circle>
-                    </svg>
-
-                    <svg width="33%" height="33%" viewBox="0 0 42 42" className="donut">
-                        <circle className="donut-hole" style={{ fill: "#fff" }} cx="21" cy="21" r="15.91549430918954"></circle>
-                        <circle className="donut-ring" style={{ fill: 'transparent', stroke: "#d2d3d4", strokeWidth: 3 }} cx="21" cy="21" r="15.91549430918954"></circle>
-                        <circle className="donut-segment" style={{ fill: 'transparent', stroke: "#ce4b99", strokeWidth: 3, strokeDasharray: "85 15", strokeDashoffset: "0" }} cx="21" cy="21" r="15.91549430918954"></circle>
-                    </svg>
+                    <div id="english-read" className="col-xs-4 col-sm-4"></div>
+                    <div id="english-write" className="col-xs-4 col-sm-4"></div>
+                    <div id="english-speak" className="col-xs-4 col-sm-4"></div>
 
                 </div>
 
