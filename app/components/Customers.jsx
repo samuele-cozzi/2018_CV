@@ -5,7 +5,7 @@ window.Customers = React.createClass({
   render: function () {
     return (
       <div className="mx-auto">
-        <h3>Customers</h3>
+        <h4>Customers</h4>
 
         <div className="row">
           <div className="col-xs-4 col-sm-3 col-md-4 col-lg-3 mb-1">

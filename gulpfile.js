@@ -123,7 +123,7 @@ gulp.task('serve', () => {
       '.tmp/fonts/**/*'
     ]).on('change', reload);
 
-    gulp.watch('app/styles/*.less', ['styles']);
+    gulp.watch('app/styles/**/*.less', ['styles']);
     gulp.watch('app/components/**/*.jsx', ['templates', reload]);
     gulp.watch('app/scripts/**/*.js', ['scripts']);
     gulp.watch('app/fonts/**/*', ['fonts']);

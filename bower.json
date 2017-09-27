@@ -5,11 +5,8 @@
     "bootstrap": "~4.0.0-alpha.6",
     "modernizr": "~2.8.1",
     "react": "^15.6.1",
-    "chartist": "^0.11.0",
-    "echarts": "^3.7.1",
-    "d3": "^4.10.2",
     "MDBootstrap": "^4.4.1",
-    "chart.js": "^2.7.0"
+    "chartist": "^0.11.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",

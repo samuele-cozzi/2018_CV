@@ -4,35 +4,22 @@ window.Card = React.createClass({
     },
     render: function () {
         return (
-            // <div className="card card-cascade mb-1">
-            //     <div className="view gradient-card-header elegant-color-dark text-center">
-            //         <h2 className="h2-responsive white-text mt-1">Alan Doe</h2>
-            //         <p className="white-text">Developer</p>
-            //     </div>
-            //     <div className="card-body">
-            //         <p><a className="icons-sm"><i className="fa fa-twitter"> @samu_tech</i></a></p>
-            //         <p><a className="icons-sm" href="https://www.linkedin.com/in/samuele-cozzi-02650119/"><i className="fa fa-linkedin"> samuele-cozzi</i></a></p>
-            //         <p><a className="icons-sm"><i className="fa fa-github"> samuele-cozzi</i></a></p>
-            //         <p><a className="icons-sm"><i className="fa fa-envelope"> samuele.cozzi@gmail.com</i></a></p>
-            //     </div>
-
-            // </div>
-
-            <div className="card">
+            <div className="card mb-1">
 
                 <div className="card-header text-center">
                     <h2 className="card-title white-text"><strong>Alan Doe</strong></h2>
-                    <h4 className="indigo-text"><strong>Senior Developer</strong></h4>
+                    <h4 className="white-text"><strong>Senior Developer</strong></h4>
                 </div>
 
                 <div className="card-body text-center">
-                    
+                    <p className="card-text"><i className="fa fa-map-marker" aria-hidden="true"></i> Nerviano 20014, Milan Area</p>
+                    <p className="card-text"><i className="fa fa-calendar" aria-hidden="true"></i> 5 settembre 1981</p>
 
-                    <p className="card-text"><i className="fa fa-map-marker" aria-hidden="true"></i> Milan Area</p>
-
-                    <a className="icons-sm li-ic"><i className="fa fa-linkedin"> </i></a>
-                    <a className="icons-sm tw-ic"><i className="fa fa-twitter"> </i></a>
-                    <a className="icons-sm fb-ic"><i className="fa fa-facebook"> </i></a>
+                    <a className="icons-sm li-ic" target ="_blank" href="https://www.linkedin.com/in/samuele-cozzi-02650119/"><i className="fa fa-linkedin"> </i></a>
+                    <a className="icons-sm tw-ic" target ="_blank" href="https://twitter.com/samu_tech"><i className="fa fa-twitter"> </i></a>
+                    <a className="icons-sm fb-ic" target ="_blank" href="https://github.com/samuele-cozzi"><i className="fa fa-github"> </i></a>
+                    <a className="icons-sm" target ="_blank" href="mailto:samuele.cozzi@gmail.com"><i className="fa fa-envelope"> </i></a>
+                    <a className="icons-sm" target ="_blank" href="https://drive.google.com/open?id=0B8BgVMJWK7LceUxQZ0o3c3R5NFk"><i className="fa fa-cloud-download"> </i></a>
                 </div>
 
             </div>

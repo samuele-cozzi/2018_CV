@@ -8,17 +8,28 @@
     height: 100%;
     width: 5px;
     background: gray;
-    left: 0;
+    left: 10px;
   }
   
-  h2 {
+  .badge {
     background: gray;
+    margin: 2px;
+  }
+  .title {
+    display: block;
     max-width: 6em;
     margin: 0 auto 1em;
     padding: 0.5em;
     text-align: center;
     position: relative;
     clear: both;
+  }
+
+  .pin{
+    max-width: 2.1em;
+    float: left;
+    left: -14px;
+    top: 14px;
   }
   
   ul {
@@ -27,21 +38,24 @@
     z-index: 1;
   }
   
-  li {
-    background: gray;
-    padding: 1em;
+  .item {
     margin-bottom: 1em;
     position: relative;
-    
+    padding-top: 1.5em;    
+  }
+
+  .card-header {
+    background-color: gray;
+  }
+
+  li {
     &:before {
       content: '';
-      width: 0;
-      height: 0;
-      border-top: 1em solid gray;
-      border-left: 1em solid transparent;
+      width: 50%;
+      height: 5px;
+      background: gray;
       position: absolute;
-      left: -1em;
-      top: 0;
+      margin-top: 1.5em;
     }
   }
   
@@ -70,27 +84,34 @@
       max-width: 700px;
       margin: 0 auto;
     }
-    
+
     li {
-      width: 42%;
+      width: 50%;
     }
     
     li:nth-child(even) {
       float: right;
       margin-top: 2em;
+      .pin {
+        float: left;
+        left: -11px;
+        top: 14px;
+      }
+      
     }
     
     li:nth-child(odd) {
       float: left;
-      
-      &:before {
-        border-top: 1em solid gray;
-        border-right: 1em solid transparent;
-        right: -1em;
-        left: auto;
-      }
+      .pin {
+        float: right;
+        left: 11px;
+        top: 14px;
+      }      
     }
+
     
+    
+
     li:nth-of-type(2n+1) {
       clear: both;
     }

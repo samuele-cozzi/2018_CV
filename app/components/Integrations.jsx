@@ -9,7 +9,7 @@ window.Integrations = React.createClass({
           return (
               <div>
                   <h5>Integrations</h5>
-                  <img src="styles/img/integrations.png" className="img-fluid"/>
+                  <img src="images/integrations.png" className="img-fluid"/>
               </div>
           );
       }

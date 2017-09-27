@@ -6,7 +6,7 @@ window.Tools = React.createClass({
           return (
               <div>
                   <h5>Tools</h5>
-                  <img src="styles/img/wordcloud.png" className="img-fluid"/>
+                  <img src="images/wordcloud.png" className="img-fluid"/>
               </div>
           );
       }
