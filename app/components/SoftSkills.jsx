@@ -34,9 +34,10 @@ window.SoftSkills = React.createClass({
                 },
             
                 title: {
-                    enabled: false,
-                    text: 'Budget vs spending',
-                    x: -80
+                    text: ''
+                },
+                legend: {
+                    enabled: false
                 },
             
                 pane: {
@@ -57,15 +58,11 @@ window.SoftSkills = React.createClass({
                 },
             
                 tooltip: {
-                    shared: true,
-                    pointFormat: '<span style="color:{series.color}">{series.name}: <b>${point.y:,.0f}</b><br/>'
+                    enabled: false
                 },
             
-                legend: { display: false },
-            
                 series: [{
-                    data: [43000, 19000, 60000, 35000, 17000, 10000],
-                    pointPlacement: 'on'
+                    data: [43000, 19000, 60000, 35000, 17000, 10000]
                 }]
             
             });

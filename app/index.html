@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Alan Doe Resume</title>
+    <title>Samuele Cozzi Resume</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
@@ -14,7 +14,6 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/MDBootstrap/css/mdb.min.css" />
-    <link rel="stylesheet" href="/bower_components/chartist/dist/chartist.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -42,7 +41,7 @@
         <div class="row">
 
             <div class="col-md-4 order-md-2 card-top">
-                <div id="card"></div>
+                <div id="card" class="mb-5"></div>
             </div>
 
             <div class="col-md-8 order-md-1 col-body">
@@ -51,23 +50,23 @@
                 <div id="timeline"></div>
 
                 <div class="row">
-                    <div id="tech-skills" class="col-md-6"></div>
-                    <div id="soft-skills" class="col-md-6"></div>
+                    <div id="tools" class="col-md-12"></div>
                 </div>
 
                 <div class="row">
                     <div id="integrations" class="col-md-6"></div>
-                    <div id="tools" class="col-md-6"></div>
+                    <div id="soft-skills" class="col-md-6"></div>
+                    
                 </div>
 
             </div>
             <!-- /.blog-main -->
             <div class="col-md-8 order-3"></div>
             <div class="col-md-4 order-4">
-                <div id="tech-areas" class="mb-1"></div>
-                <div id="languages"></div>
-                <div id="customers" class="mb-1"></div>
-                <div id="awards"></div>
+                <div id="tech-areas" class="mb-5"></div>
+                <div id="languages" class="mb-5"></div>
+                <div id="customers" class="mb-5"></div>
+                <div id="awards" class="mb-5"></div>
                 <div id="hobbies"></div>
             </div>
 
@@ -95,15 +94,16 @@
         <script src="/bower_components/react/react-dom.js"></script>
         <script src="/bower_components/MDBootstrap/js/mdb.min.js"></script>
         <script src="/bower_components/chartist/dist/chartist.js"></script>
+        <script src="/bower_components/highcharts/highcharts.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
         <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/js/mdb.min.js"></script> -->
-        
-        <!-- endbuild -->
+
 
         <!-- build:js scripts/main.js -->
+        <script src="/bower_components/highcharts/highcharts-more.js"></script>
         <script src="scripts/AboutMe.js"></script>
         <script src="scripts/Awards.js"></script>
         <script src="scripts/Card.js"></script>
@@ -114,7 +114,7 @@
         <script src="scripts/Languages.js"></script>
         <script src="scripts/TechAreas.js"></script>
         <script src="scripts/SoftSkills.js"></script>
-        <script src="scripts/TechSkills.js"></script>
+        <!-- <script src="scripts/TechSkills.js"></script> -->
         <script src="scripts/Timeline.js"></script>
         <script src="scripts/Tools.js"></script>
         <script src="scripts/main.js"></script>

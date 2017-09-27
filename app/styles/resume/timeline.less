@@ -7,12 +7,12 @@
     position: absolute;
     height: 100%;
     width: 5px;
-    background: gray;
+    background: @theme-color;
     left: 10px;
   }
   
   .badge {
-    background: gray;
+    background: @theme-color;
     margin: 2px;
   }
   .title {
@@ -45,7 +45,7 @@
   }
 
   .card-header {
-    background-color: gray;
+    background-color: @theme-color;
   }
 
   li {
@@ -53,7 +53,7 @@
       content: '';
       width: 50%;
       height: 5px;
-      background: gray;
+      background: @theme-color;
       position: absolute;
       margin-top: 1.5em;
     }
@@ -73,22 +73,18 @@
     max-width: 1000px;
     margin: 0 auto;
   }
-  
   .timeline {
     &:before {
       left: 50%;
     }
-    
     ul {
       padding-left: 0;
       max-width: 700px;
       margin: 0 auto;
     }
-
     li {
       width: 50%;
     }
-    
     li:nth-child(even) {
       float: right;
       margin-top: 2em;
@@ -99,7 +95,6 @@
       }
       
     }
-    
     li:nth-child(odd) {
       float: left;
       .pin {
@@ -108,12 +103,49 @@
         top: 14px;
       }      
     }
-
-    
-    
-
     li:nth-of-type(2n+1) {
       clear: both;
     }
   }
 }
+
+@media print {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .timeline {
+    &:before {
+      left: 50%;
+    }
+    ul {
+      padding-left: 0;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    li {
+      width: 50%;
+    }
+    li:nth-child(even) {
+      float: right;
+      margin-top: 2em;
+      .pin {
+        float: left;
+        left: -11px;
+        top: 14px;
+      }
+      
+    }
+    li:nth-child(odd) {
+      float: left;
+      .pin {
+        float: right;
+        left: 11px;
+        top: 14px;
+      }      
+    }
+    li:nth-of-type(2n+1) {
+      clear: both;
+    }
+  }
+ }

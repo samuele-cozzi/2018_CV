@@ -46,6 +46,8 @@
   },
   "dependencies": {
     "echarts": "^3.7.1",
-    "mdbootstrap": "^4.4.1"
+    "mdbootstrap": "^4.4.1",
+    "react-svg-chart": "^4.0.1",
+    "svg-radar-chart": "^0.2.0"
   }
 }

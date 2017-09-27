@@ -13,7 +13,7 @@ window.Awards = React.createClass({
                     <div className="media-body">
                         <h5 className="media-heading">Coursera</h5>
                         <h6 className="media-heading">Ottobre 2016</h6>
-                        <p>MCPD: Enterprise Application Developer</p>
+                        <p>Machine Learning</p>
                     </div>
                 </div>
                 <div className="media mb-1">
@@ -22,7 +22,7 @@ window.Awards = React.createClass({
                     </a>
                     <div className="media-body">
                         <h5 className="media-heading">Sitecore</h5>
-                        <h6 className="media-heading">Ottobre 2015</h6>
+                        <h6 className="media-heading">Marzo 2012</h6>
                         <p>Sitecore CMS 6.5 Certified Professional Developer</p>
                     </div>
                 </div>
@@ -33,7 +33,7 @@ window.Awards = React.createClass({
                     </a>
                     <div className="media-body">
                         <h5 className="media-heading">Microsoft</h5>
-                        <h6 className="media-heading">Ottobre 2015</h6>
+                        <h6 className="media-heading">Marzo 2008</h6>
                         <p>MCPD: Enterprise Application Developer</p>
                     </div>
                 </div>

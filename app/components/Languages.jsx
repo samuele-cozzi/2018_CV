@@ -18,9 +18,9 @@ window.Languages = React.createClass({
             showLabel: false
           };
 
-        new Chartist.Pie('#italian-read', {series: [90, 10]}, _showOptions);
-        new Chartist.Pie('#italian-write', {series: [90, 10]}, _showOptions);
-        new Chartist.Pie('#italian-speak', {series: [90, 10]}, _showOptions);
+        new Chartist.Pie('#italian-read', {series: [100, 0]}, _showOptions);
+        new Chartist.Pie('#italian-write', {series: [100, 0]}, _showOptions);
+        new Chartist.Pie('#italian-speak', {series: [100, 0]}, _showOptions);
 
         new Chartist.Pie('#english-read', {series: [80, 20]}, _showOptions);
         new Chartist.Pie('#english-write', {series: [80, 20]}, _showOptions);
@@ -31,18 +31,18 @@ window.Languages = React.createClass({
             <div className="languages mx-auto mb-1">
                 <div className="row ">
                     <div className="col-md-12">
-                        <h4>Italian</h4>
+                        <h4>Italiano</h4>
                     </div>
                     <div className="col-xs-4 col-sm-4 text-center">
-                        <h6>Read</h6>
+                        <h6>Letto</h6>
                         <div id="italian-read"></div>                        
                     </div>
                     <div className="col-xs-4 col-sm-4 text-center">
-                        <h6>Write</h6>
+                        <h6>Scritto</h6>
                         <div id="italian-write"></div>
                     </div>
                     <div className="col-xs-4 col-sm-4 text-center">
-                        <h6>Speak</h6>
+                        <h6>Parlato</h6>
                         <div id="italian-speak"></div>
                     </div>
 
@@ -50,19 +50,19 @@ window.Languages = React.createClass({
 
                 <div className="row">
                     <div className="col-md-12">
-                        <h4>English</h4>
+                        <h4>Inglese</h4>
                     </div>
 
                     <div className="col-xs-4 col-sm-4 text-center">
-                        <h6>Read</h6>
+                        <h6>Letto</h6>
                         <div id="english-read"></div>                        
                     </div>
                     <div className="col-xs-4 col-sm-4 text-center">
-                        <h6>Write</h6>
+                        <h6>Scritto</h6>
                         <div id="english-write"></div>
                     </div>
                     <div className="col-xs-4 col-sm-4 text-center">
-                        <h6>Speak</h6>
+                        <h6>Parlato</h6>
                         <div id="english-speak"></div>
                     </div>
 
