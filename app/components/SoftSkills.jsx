@@ -3,50 +3,28 @@ window.SoftSkills = React.createClass({
         return {};
     },
     componentDidMount: function () {
-        //var ctxSS = document.getElementById("softSkillChart").getContext('2d');
-        // var myRadarChart = new Chart(ctxSS, {
-        //     type: 'radar',
-        //     data: {
-        //         labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
-        //         datasets: [
-        //             {
-        //                 fillColor: "rgba(220,220,220,0.2)",
-        //                 strokeColor: "rgba(220,220,220,1)",
-        //                 pointColor: "rgba(220,220,220,1)",
-        //                 pointStrokeColor: "#fff",
-        //                 pointHighlightFill: "#fff",
-        //                 pointHighlightStroke: "rgba(220,220,220,1)",
-        //                 data: [65, 59, 90, 81, 56, 55, 40]
-        //             }
-        //         ]
-        //     },
-        //     options: {
-        //         responsive: true,
-        //         legend: { display: false }
-        //     }
-        // });
-
         Highcharts.chart('softSkillChart', {
-            
                 chart: {
                     polar: true,
                     type: 'line'
                 },
-            
                 title: {
                     text: ''
                 },
                 legend: {
                     enabled: false
                 },
-            
                 pane: {
                     size: '80%'
                 },
-            
                 xAxis: {
-                    categories: ['Sales', 'Marketing', 'Development', 'Customer Support',
-                            'Information Technology', 'Administration'],
+                    categories: ['Iniziativa e innovazione'
+                        , 'Leadership e Management'
+                        , 'Organizzazione e anticipazione'
+                        , 'Focus Cliente'
+                        , 'Senso Relazionale'
+                        , 'Senso del Risultato'
+                        , 'Ricerca di Soluzioni'],
                     tickmarkPlacement: 'on',
                     lineWidth: 0
                 },
@@ -62,7 +40,7 @@ window.SoftSkills = React.createClass({
                 },
             
                 series: [{
-                    data: [43000, 19000, 60000, 35000, 17000, 10000]
+                    data: [3, 4, 4, 2, 3, 4, 5]
                 }]
             
             });
