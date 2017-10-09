@@ -33,15 +33,15 @@ window.Languages = React.createClass({
                     <div className="col-md-12">
                         <h4>Italiano</h4>
                     </div>
-                    <div className="col-xs-4 col-sm-4 text-center">
+                    <div className="col-xs-4 col-sm-4">
                         <h6>Letto</h6>
                         <div id="italian-read"></div>                        
                     </div>
-                    <div className="col-xs-4 col-sm-4 text-center">
+                    <div className="col-xs-4 col-sm-4">
                         <h6>Scritto</h6>
                         <div id="italian-write"></div>
                     </div>
-                    <div className="col-xs-4 col-sm-4 text-center">
+                    <div className="col-xs-4 col-sm-4">
                         <h6>Parlato</h6>
                         <div id="italian-speak"></div>
                     </div>
@@ -53,15 +53,15 @@ window.Languages = React.createClass({
                         <h4>Inglese</h4>
                     </div>
 
-                    <div className="col-xs-4 col-sm-4 text-center">
+                    <div className="col-xs-4 col-sm-4">
                         <h6>Letto</h6>
                         <div id="english-read"></div>                        
                     </div>
-                    <div className="col-xs-4 col-sm-4 text-center">
+                    <div className="col-xs-4 col-sm-4">
                         <h6>Scritto</h6>
                         <div id="english-write"></div>
                     </div>
-                    <div className="col-xs-4 col-sm-4 text-center">
+                    <div className="col-xs-4 col-sm-4">
                         <h6>Parlato</h6>
                         <div id="english-speak"></div>
                     </div>

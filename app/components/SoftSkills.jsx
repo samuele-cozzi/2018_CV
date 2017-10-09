@@ -3,52 +3,51 @@ window.SoftSkills = React.createClass({
         return {};
     },
     componentDidMount: function () {
-        Highcharts.chart('softSkillChart', {
-                chart: {
-                    polar: true,
-                    type: 'line'
-                },
-                title: {
-                    text: ''
-                },
-                legend: {
-                    enabled: false
-                },
-                pane: {
-                    size: '80%'
-                },
-                xAxis: {
-                    categories: ['Iniziativa e innovazione'
-                        , 'Leadership e Management'
-                        , 'Organizzazione e anticipazione'
-                        , 'Focus Cliente'
-                        , 'Senso Relazionale'
-                        , 'Senso del Risultato'
-                        , 'Ricerca di Soluzioni'],
-                    tickmarkPlacement: 'on',
-                    lineWidth: 0
-                },
+        // Highcharts.chart('softSkillChart', {
+        //         chart: {
+        //             polar: true,
+        //             type: 'line'
+        //         },
+        //         title: {
+        //             text: ''
+        //         },
+        //         legend: {
+        //             enabled: false
+        //         },
+        //         pane: {
+        //             size: '80%'
+        //         },
+        //         xAxis: {
+        //             categories: ['Iniziativa e innovazione'
+        //                 , 'Leadership e Management'
+        //                 , 'Organizzazione e anticipazione'
+        //                 , 'Focus Cliente'
+        //                 , 'Senso Relazionale'
+        //                 , 'Senso del Risultato'
+        //                 , 'Ricerca di Soluzioni'],
+        //             tickmarkPlacement: 'on',
+        //             lineWidth: 0
+        //         },
+        //         yAxis: {
+        //             gridLineInterpolation: 'polygon',
+        //             lineWidth: 0,
+        //             min: 0
+        //         },
+        //         tooltip: {
+        //             enabled: false
+        //         },
+        //         series: [{
+        //             data: [10, 8, 9, 8, 7, 9, 10]
+        //         }]
             
-                yAxis: {
-                    gridLineInterpolation: 'polygon',
-                    lineWidth: 0,
-                    min: 0
-                },
-            
-                tooltip: {
-                    enabled: false
-                },
-            
-                series: [{
-                    data: [3, 4, 4, 2, 3, 4, 5]
-                }]
-            
-            });
+        //     });
     },
     render: function () {
         return (
-            // <canvas id="softSkillChart" ></canvas>
-            <div id="softSkillChart"></div>
+            // <div id="softSkillChart"></div>
+            <div>
+                <img src="images/SoftSkills.png" className="img-fluid"/>
+            </div>
         );
     }
 });

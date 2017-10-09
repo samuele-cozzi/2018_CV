@@ -19,7 +19,13 @@ window.Timeline = React.createClass({
 
               <div className="card-body">
                 <p className="card-text">
-                  Ho seguito progetti di varia natura nell'ambito eCommerce
+                  Ho seguito progetti di varia natura nell'ambito eCommerce.
+                </p>
+                <p className="card-text">
+                  Ho gestione team di 8 risorse.
+                </p>
+                <p className="card-text">
+                  Sono manager di prossimità di 15 risorse.
                 </p>
                 <span className="badge">eCommerce</span>
                 <span className="badge">Website</span>
@@ -49,6 +55,8 @@ window.Timeline = React.createClass({
               </p>
                 <span className="badge">Supply chain</span>
                 <span className="badge">Integration Layer</span>
+                <span className="badge">eCommerce</span>
+                <span className="badge">Website</span>
               </div>
 
             </div>
@@ -119,7 +127,7 @@ window.Timeline = React.createClass({
 
               <div className="card-body">
                 <p className="card-text">
-                  Tesi: "" (indirizzo biofisica)
+                  Tesi: "Meccanismi di controllo del firing in neuroni" (indirizzo biofisica)
             </p>
                 <span className="badge">Università degli studi di Milano</span>
               </div>
