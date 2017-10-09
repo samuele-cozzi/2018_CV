@@ -7,25 +7,25 @@ window.TechAreas = React.createClass({
             <div className="mx-auto">
                 <div className="row">
                 <div className="col-xs-4 col-sm-3 col-md-4 col-lg-3 mb-1">
-                        <img src="images/code.svg" className="img-fluid" alt="Code" />
+                        <img src="images/Code.svg" className="img-fluid" alt="Code" />
                     </div>
                     <div className="col-xs-4 col-sm-3 col-md-4 col-lg-3 mb-1">
-                        <img src="images/internet.svg" className="img-fluid" alt="Web" />
+                        <img src="images/Internet.svg" className="img-fluid" alt="Web" />
                     </div>
                     <div className="col-xs-4 col-sm-3 col-md-4 col-lg-3 mb-1">
-                        <img src="images/mobile.svg" className="img-fluid" alt="Mobile" />
+                        <img src="images/Mobile.svg" className="img-fluid" alt="Mobile" />
                     </div>
                     <div className="col-xs-4 col-sm-3 col-md-4 col-lg-3 mb-1">
-                        <img src="images/microservices.svg" className="img-fluid" alt="Micro Services" />
+                        <img src="images/Microservices.svg" className="img-fluid" alt="Micro Services" />
                     </div>
                     <div className="col-xs-4 col-sm-3 col-md-4 col-lg-3 mb-1">
-                        <img src="images/data.svg" className="img-fluid" alt="Data" />
+                        <img src="images/Data.svg" className="img-fluid" alt="Data" />
                     </div>
                     <div className="col-xs-4 col-sm-3 col-md-4 col-lg-3 mb-1">
-                        <img src="images/cloud.svg" className="img-fluid" alt="Cloud" />
+                        <img src="images/Cloud.svg" className="img-fluid" alt="Cloud" />
                     </div>
                     <div className="col-xs-4 col-sm-3 col-md-4 col-lg-3 mb-1">
-                        <img src="images/machinelearning.svg" className="img-fluid" alt="AI" />
+                        <img src="images/MachineLearning.svg" className="img-fluid" alt="AI" />
                     </div>
                     <div className="col-xs-4 col-sm-3 col-md-4 col-lg-3 mb-1">
                         <img src="images/IoT.svg" className="img-fluid" alt="IoT" />
