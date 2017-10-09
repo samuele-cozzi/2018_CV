@@ -1,0 +1,29 @@
+area_from,platform_from,area_to,platform_to
+Webapp,Custom,Webapp,Custom
+Integration,Middleware,Integration,Middleware
+Marketplace,Mirakl,Webapp,Custom
+Insurance,Friss,Webapp,Custom
+Insurance,ANIA,Webapp,Custom
+Bank,Hipay,Webapp,Custom
+Bank,Hipay,Integration,Middleware
+Bank,Paytipper,Webapp,Custom
+Bank,Paytipper,Integration,Middleware
+Bank,Skrill,Webapp,Custom
+Bank,Skrill,Integration,Middleware
+Bank,Banca Sella,Webapp,Custom
+Bank,Banca Sella,Integration,Middleware
+Catalog,Cust.,Integration,Middleware
+Integration,Boomi,Integration,Middleware
+Integration,MuleSoft,Desktop,Custom
+Integration,Middleware,Marketplace,Mirakl
+Integration,FTP,Marketplace,Mirakl
+Integration,SQL,Marketplace,Mirakl
+ERP,Oracle,Integration,Middleware
+ERP,Dynamics,Integration,Middleware
+ERP,Custom,Integration,Middleware
+Search,Algolia,Webapp,Custom
+Search,Solr,Webapp,Custom
+Cloud,Azure,Webapp,Custom
+Cloud,Firebase,Webapp,Custom
+Field Service,Click Software,Integration,Middleware
+Field Service,Click Software,Webapp,Custom

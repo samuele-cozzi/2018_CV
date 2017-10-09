@@ -1,0 +1,88 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+
+```{r}
+#install.packages("tm")  # for text mining
+#install.packages("SnowballC") # for text stemming
+#install.packages("wordcloud") # word-cloud generator 
+#install.packages("RColorBrewer") # color palettes
+#install.packages("circlize")
+```
+```{r}
+library("tm")
+library("SnowballC")
+library("wordcloud")
+library("RColorBrewer")
+```
+
+```{r, fig.width = 16, fig.height = 8}
+mydata = read.csv("skills.csv") 
+mydata
+set.seed(1234)
+wordcloud(words = mydata$Skill, freq = mydata$Value, min.freq = 1,scale=c(4,.5),
+          max.words=200, random.order=TRUE, rot.per=0, 
+          colors=brewer.pal(8, "Dark2"), fixed.asp=FALSE)
+```
+
+
+```{r}
+library(circlize)
+```
+
+```{r, fig.width = 12, fig.height = 12}
+
+df = read.csv("platforms.csv", header = TRUE, stringsAsFactors = FALSE) 
+
+brand = c(structure(df$area_from, names=df$platform_from), structure(df$area_to,names= df$platform_to))
+structure(df$brand_from, names=df$model_from)
+
+brand = brand[!duplicated(names(brand))]
+brand = brand[order(brand, names(brand))]
+
+brand_color = structure(2:10, names = unique(brand))
+model_color = structure(2:16, names = names(brand))
+```
+
+```{r, fig.width = 12, fig.height = 12}
+gap.after = do.call("c", lapply(table(brand), function(i) c(rep(2, i-1), 8)))
+circos.par(gap.after = gap.after, cell.padding = c(0, 0, 0, 0))
+
+df[, c(2, 4)]
+
+chordDiagram(df[, c(2, 4)], order = names(brand), grid.col = model_color,
+    directional = 1, annotationTrack = "grid", preAllocateTracks = list(
+        list(track.height = 0.02)),annotationTrackHeight =0.2
+)
+
+circos.track(track.index = 2, panel.fun = function(x, y) {
+    xlim = get.cell.meta.data("xlim")
+    ylim = get.cell.meta.data("ylim")
+    sector.index = get.cell.meta.data("sector.index")
+    circos.text(mean(xlim), mean(ylim), sector.index, col = "black", cex = 1, facing = "inside", niceFacing = TRUE)
+}, bg.border = NA)
+
+for(b in unique(brand)) {
+  model = names(brand[brand == b])
+  highlight.sector(sector.index = model, track.index = 1, col = brand_color[b], 
+    text = b, text.vjust = -1, niceFacing = TRUE, cex=2)
+}
+
+circos.clear()
+```
+
+

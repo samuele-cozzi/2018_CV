@@ -9,7 +9,7 @@ window.Timeline = React.createClass({
 
         <ul>
           <li>
-            <div li className="badge title pin"><i className="fa fa-gears" aria-hidden="true"></i></div>
+            <div li className="badge title pin"><i className="fa fa-briefcase" aria-hidden="true"></i></div>
             <div className="card item">
 
               <div className="card-header">
@@ -32,7 +32,7 @@ window.Timeline = React.createClass({
             </div>
           </li>
           <li>
-            <div li className="badge title pin"><i className="fa fa-gears" aria-hidden="true"></i></div>
+            <div li className="badge title pin"><i className="fa fa-briefcase" aria-hidden="true"></i></div>
             <div className="card item">
 
               <div className="card-header">
@@ -58,7 +58,7 @@ window.Timeline = React.createClass({
 
         <ul>
           <li>
-            <div li className="badge title pin"><i className="fa fa-gears" aria-hidden="true"></i></div>
+            <div li className="badge title pin"><i className="fa fa-briefcase" aria-hidden="true"></i></div>
             <div className="card item">
 
               <div className="card-header">
@@ -84,7 +84,7 @@ window.Timeline = React.createClass({
             </div>
           </li>
           <li>
-            <div li className="badge title pin"><i className="fa fa-gears" aria-hidden="true"></i></div>
+            <div li className="badge title pin"><i className="fa fa-briefcase" aria-hidden="true"></i></div>
             <div className="card item">
 
               <div className="card-header">
