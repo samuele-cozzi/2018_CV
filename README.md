@@ -43,6 +43,7 @@ $ firebase serve
 ### Deploy
 
 ```shell
+$ gulp build
 $ firebase deploy
 ```
 ### Enviroments
