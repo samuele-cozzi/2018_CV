@@ -20,7 +20,7 @@ gulp.task('styles', () => {
      }))
     .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
     .pipe($.if(dev, $.sourcemaps.write()))
-    .pipe(gulp.dest('.tmp/styles'))
+    .pipe(gulp.dest('tmp/styles'))
     .pipe(reload({stream: true}));
 });
 
@@ -30,7 +30,7 @@ gulp.task('scripts', () => {
     .pipe($.if(dev, $.sourcemaps.init()))
     .pipe($.babel())
     .pipe($.if(dev, $.sourcemaps.write('.')))
-    .pipe(gulp.dest('.tmp/scripts'))
+    .pipe(gulp.dest('tmp/scripts'))
     .pipe(reload({stream: true}));
 });
 
@@ -41,7 +41,7 @@ gulp.task('templates', () => {
       presets: ['es2015','react']
     }))
     .pipe($.sourcemaps.write())
-    .pipe(gulp.dest('.tmp/scripts'));
+    .pipe(gulp.dest('tmp/scripts'));
 });
 
 function lint(files) {
@@ -63,7 +63,7 @@ gulp.task('lint:test', () => {
 
 gulp.task('html', ['styles', 'templates', 'scripts'], () => {
   return gulp.src('app/*.html')
-    .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
+    .pipe($.useref({searchPath: ['tmp', 'app', '.']}))
     .pipe($.if(/\.js$/, $.uglify({compress: {drop_console: true}})))
     .pipe($.if(/\.css$/, $.cssnano({safe: true, autoprefixer: false})))
     .pipe($.if(/\.html$/, $.htmlmin({
@@ -88,7 +88,7 @@ gulp.task('images', () => {
 gulp.task('fonts', () => {
   return gulp.src(require('main-bower-files')('**/*.{eot,svg,ttf,woff,woff2}', function (err) {})
     .concat('app/fonts/**/*'))
-    .pipe($.if(dev, gulp.dest('.tmp/fonts'), gulp.dest('dist/fonts')));
+    .pipe($.if(dev, gulp.dest('tmp/fonts'), gulp.dest('dist/fonts')));
 });
 
 gulp.task('extras', () => {
@@ -100,7 +100,7 @@ gulp.task('extras', () => {
   }).pipe(gulp.dest('dist'));
 });
 
-gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
+gulp.task('clean', del.bind(null, ['tmp', 'dist']));
 
 gulp.task('serve', () => {
   runSequence(['clean', 'wiredep'], ['styles', 'templates', 'scripts', 'fonts'], () => {
@@ -108,7 +108,7 @@ gulp.task('serve', () => {
       notify: false,
       port: 9000,
       server: {
-        baseDir: ['.tmp', 'app'],
+        baseDir: ['tmp', 'app'],
         routes: {
           '/bower_components': 'bower_components'
         }
@@ -118,9 +118,9 @@ gulp.task('serve', () => {
     gulp.watch([
       'app/*.html',
       'app/images/**/*',
-      '.tmp/scripts/**/*.js',
-      '.tmp/styles/**/*.less',
-      '.tmp/fonts/**/*'
+      'tmp/scripts/**/*.js',
+      'tmp/styles/**/*.less',
+      'tmp/fonts/**/*'
     ]).on('change', reload);
 
     gulp.watch('app/styles/**/*.less', ['styles']);
@@ -149,7 +149,7 @@ gulp.task('serve:test', ['scripts'], () => {
     server: {
       baseDir: 'test',
       routes: {
-        '/scripts': '.tmp/scripts',
+        '/scripts': 'tmp/scripts',
         '/bower_components': 'bower_components'
       }
     }
