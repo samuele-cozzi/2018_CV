@@ -13,19 +13,19 @@ window.Timeline = React.createClass({
             <div className="card item">
 
               <div className="card-header">
-                <p className="white-text card-text"><i className="fa fa-calendar"></i> Dicembre 2014 - oggi</p>
+                <p className="white-text card-text"><i className="fa fa-calendar"></i> from 2014 - today</p>
                 <h5 className="card-title white-text"><strong>Manager @Soprasteria</strong></h5>
               </div>
 
               <div className="card-body">
                 <p className="card-text">
-                  Ho seguito progetti di varia natura nell'ambito eCommerce.
+                  I have managed variuos kind of projects 
                 </p>
                 <p className="card-text">
-                  Ho gestione team di 8 risorse.
+                  I have managed teams of 4 resources.
                 </p>
                 <p className="card-text">
-                  Sono manager di prossimità di 15 risorse.
+                  I have managed the career of 15 resources.
                 </p>
                 <span className="badge">eCommerce</span>
                 <span className="badge">Website</span>
@@ -42,16 +42,16 @@ window.Timeline = React.createClass({
             <div className="card item">
 
               <div className="card-header">
-                <p className="white-text card-text"><i className="fa fa-calendar"></i> dal 2012 - al 2014</p>
+                <p className="white-text card-text"><i className="fa fa-calendar"></i> from 2012 - to 2014</p>
                 <h5 className="card-title white-text"><strong>Solution Architect @Soprasteria</strong></h5>
               </div>
 
               <div className="card-body">
                 <p className="card-text">
-                  Progetto per l'erogazione di servizi professionali (Back Office, Tablet e BI)
+                I have analyzed and developed the architecture of a project about professional services (Back Office, Tablet e BI)
               </p>
                 <p className="card-text">
-                  Progetto di integrazione per la fatturazione
+                  I have analyzed and developed the architecture of an integration project 
               </p>
                 <span className="badge">Supply chain</span>
                 <span className="badge">Integration Layer</span>
@@ -70,19 +70,19 @@ window.Timeline = React.createClass({
             <div className="card item">
 
               <div className="card-header">
-                <p className="white-text card-text"><i className="fa fa-calendar"></i> dal 2008 - al 2012</p>
+                <p className="white-text card-text"><i className="fa fa-calendar"></i> from 2008 - to 2012</p>
                 <h5 className="card-title white-text"><strong>sr. Developer @Avanade</strong></h5>
               </div>
 
               <div className="card-body">
-                <p className="card-text">
-                  Progetto per la manutenzione evolutiva della piattaforma italiana
+              <p className="card-text">
+                  I have analyzed and developed new features of the italian application platform of and direct insurance customer
                 </p>
                 <p className="card-text">
-                  Progetto di un portale di Backoffice per la gestione dei PdV
+                  I have analyzed and developed the architecture of a website backoffice project
                 </p>
                 <p className="card-text">
-                  Progetto di un sito web realizzato con Sitecore
+                  I have analyzed and developed a website project in Sitecore
                 </p>
                 <span className="badge">Insurance</span>
                 <span className="badge">Retail</span>
@@ -96,13 +96,13 @@ window.Timeline = React.createClass({
             <div className="card item">
 
               <div className="card-header">
-                <p className="white-text card-text"><i className="fa fa-calendar"></i> dal 2006 - al 2008</p>
+                <p className="white-text card-text"><i className="fa fa-calendar"></i> from 2006 - to 2008</p>
                 <h5 className="card-title white-text"><strong>Developer @Avanade</strong></h5>
               </div>
 
               <div className="card-body">
                 <p className="card-text">
-                  Progetto internazionale per estendere la piattaforma italiana ad altre nazioni europee del gruppo
+                  I have analyzed and developed the extension of the italian application platform for other countries (Netherland and France)
                 </p>
                 <span className="badge">Insurance</span>
                 <span className="badge">VB6</span>
@@ -121,13 +121,13 @@ window.Timeline = React.createClass({
             <div className="card item">
 
               <div className="card-header">
-                <p className="white-text card-text"><i className="fa fa-calendar"></i> Ottobre 2006</p>
-                <h5 className="card-title white-text"><strong>Laurea in Fisica</strong></h5>
+                <p className="white-text card-text"><i className="fa fa-calendar"></i> October 2006</p>
+                <h5 className="card-title white-text"><strong>Degree in physics</strong></h5>
               </div>
 
               <div className="card-body">
                 <p className="card-text">
-                  Tesi: "Meccanismi di controllo del firing in neuroni" (indirizzo biofisica)
+                  Thesis:  "Mechanisms of control of firing in Golgi's neurons" (Biophysics)
             </p>
                 <span className="badge">Università degli studi di Milano</span>
               </div>
@@ -139,8 +139,8 @@ window.Timeline = React.createClass({
             <div className="card item">
 
               <div className="card-header">
-                <p className="white-text card-text"><i className="fa fa-calendar"></i> Luglio 2000</p>
-                <h5 className="card-title white-text"><strong>Dipolma Maturità Scientifica</strong></h5>
+                <p className="white-text card-text"><i className="fa fa-calendar"></i> July 2000</p>
+                <h5 className="card-title white-text"><strong>Scientific High School Diploma</strong></h5>
               </div>
             </div>
           </li>
