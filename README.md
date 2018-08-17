@@ -2,6 +2,8 @@
 
 ## Introduction
 
+The objective of this project is to create a single webpage resume with react js, and use it as a template.
+
 ## Coding
 ### Prerequisites
 - Git

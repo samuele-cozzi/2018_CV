@@ -5,7 +5,7 @@ window.Timeline = React.createClass({
   render: function () {
     return (
       <div className="timeline">
-        <h2 className="badge title">2017</h2>
+        <h2 className="badge title">2018</h2>
 
         <ul>
           <li>
