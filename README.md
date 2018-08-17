@@ -48,5 +48,5 @@ $ firebase deploy
 - [My Resume](https://resume-72cd5.firebaseapp.com/)
 
 ## License
-- [MIT License](/blob/master/LICENSE)
+- [MIT License](/LICENSE)
 
