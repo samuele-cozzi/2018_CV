@@ -10,7 +10,7 @@
 - gulp (```npm install gulp-cli -g```)
 - Firebase (```npm install -g firebase-tools```)
 
-### Clone Repository
+### Clone Repository and restore
 
 ```shell
 $ git clone https://github.com/samuele-cozzi/2018_CV.git
@@ -18,11 +18,14 @@ $ cd .\2018_CV\
 $ code .
 ```
 
-### Build and Run
-
 ```shell
 $ bower install
 $ npm install
+```
+
+### Build and Run
+
+```shell
 $ gulp build
 $ gulp run
 ```
@@ -45,5 +48,5 @@ $ firebase deploy
 - [My Resume](https://resume-72cd5.firebaseapp.com/)
 
 ## License
-
+- [MIT License](/blob/master/LICENSE)
 
